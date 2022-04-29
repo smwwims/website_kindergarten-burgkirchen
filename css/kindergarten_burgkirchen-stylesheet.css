@@ -1,3 +1,7 @@
+:root {
+  --main_color: rgb(44, 130, 243);
+}
+
 video {
   object-fit: cover;
   width: 100vw;
@@ -28,9 +32,9 @@ html { overflow-y: hidden; }
  
   border:10px; 
   border-style:solid;
-  border-color: rgb(44, 130, 243);
+  border-color: var(--main_color);
 
-  filter: drop-shadow(10px 10px 15px rgb(44, 130, 243))
+  filter: drop-shadow(10px 10px 15px var(--main_color))
 }
 
 .header_kbg {
@@ -39,7 +43,7 @@ html { overflow-y: hidden; }
 }
 
 .text_kbg {
-  color: rgb(44, 130, 243); 
+  color: var(--main_color); 
   position: fixed; 
   top: 20%;
   margin-left: 10%;
@@ -57,4 +61,14 @@ table, th, td {
 
 th, td {
   text-align: center;
+}
+
+.grand_img {
+  display: block;
+  width: 50%;
+  margin-left: auto;
+  margin-right: auto;
+  border:4px; 
+  border-style:solid;
+  border-color: var(--main_color);
 }
