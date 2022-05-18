@@ -102,3 +102,8 @@ th, td {
   left: 15px;
   border: 5px solid var(--main_color);
 }
+
+#information_table {
+  width: 500px;
+  text-align: left;
+}
