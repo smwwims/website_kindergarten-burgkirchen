@@ -28,9 +28,89 @@
     
     <!-- Style -->
     <link rel="stylesheet" href="css/style.css">
+    <style>
+    .card {
+  height: 14em;
+  width: 14em;
+  font-size: 1.5em;
+  border-radius: 1em;
+  padding: 1em;
+  display: flex;
+  align-items: flex-end;
+  background-size: cover;
+  background-position: center;
+  transition: all, var(--transition-time);
+  position: relative;
+  overflow: hidden;
+  text-decoration: none;
+}
+
+.card-side {
+  height: 20em;
+  width: 15em;
+  border-radius: 15px;
+  transition: all 0.8s ease;
+  backface-visibility: hidden;
+  position: absolute;
+  top: 0;
+  left: 0;
+  padding: 2rem;
+  color: white
+}
+
+.card-side.back {
+  transform: rotateY(-180deg);
+  background-color: #0093E9;
+  background-image: linear-gradient(160deg, #0093E9 0%, #80D0C7 100%);
+}
+
+.card:hover .card-side.front {
+  transform: rotateY(180deg);
+}
+
+.card:hover .card-side.back {
+  transform: rotateY(0deg);
+}
+
+.cards-wrapper {
+  display: grid;
+  justify-content: center;
+  align-items: center;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-gap: 4rem;
+  padding: 4rem;
+  margin: 0 auto;
+  width: max-content;
+}
+
+@media screen and (max-width: 1285px) {
+        .cards-wrapper {
+          grid-template-columns: 1fr 1fr;
+        }
+      }
+      
+      @media screen and (max-width: 900px) {
+        .cards-wrapper {
+          grid-template-columns: 1fr;
+        }
+        .card-grid-space .num {
+          margin-left: 0;
+          text-align: center;
+        }
+      }
+      
+      @media screen and (max-width: 500px) {
+        .cards-wrapper {
+          padding: 4rem 2rem;
+        }
+        .card {
+          max-width: calc(100vw - 4rem);
+        }
+      }
+    </style>
   </head>
 
-  <body>
+  <body style="margin: 0; min-height: 100vh; font-family: 'Open Sans'; background: #fafafa;">
     <div class="site-mobile-menu site-navbar-target">
       <div class="site-mobile-menu-header">
         <div class="site-mobile-menu-close mt-3">
@@ -74,57 +154,88 @@
       
           </div>
         </div>
-            
-    </header>
-        
-    <section>
-      <h1 class="header_kbg" style="top: 8%; position: absolute; width: 100%; text-align: center;">MitarbeiterInnen</h1>
-      <br><br><br><br><br><br><br><br><br>
-      <table style="width: 65%;" class="table_kbg">
-        <tbody>
-          <tr>
-            <th>Fischgruppe</th>
-            <td style="width: 50%;">Anja <br> Petra</td>
-          </tr>
-          <tr>
-            <th>Igelgruppe</th>
-            <td>Sandra <br> Sophia</td>
-          </tr>
-          <tr>
-            <th>Katzengruppe</th>
-            <td>Doris <br> Hildegard</td>
-          </tr>
-          <tr>
-            <th>Krabbelgruppe</th>
-            <td>Manuela <br> Michaela <br> Nina <br> Regina</td>
-          </tr>
-          <tr>
-            <th>Schmetterlingsgruppe</th>
-            <td>Julia <br> Sandra</td>
-          </tr>
-          <tr>
-            <th>Busbegleitung</th>
-            <td>Christa <br> Sandra</td>
-          </tr>
-          <tr>
-            <th>Reinigung</th>
-            <td>Maria</td>
-          </tr>
-          <tr>
-            <th>Leitung</th>
-            <td>Doris</td>
-          </tr>
-        </tbody>
-      </table>
-      <br><br>
-    </section>
-    
-    <section class="flexible">
-      <p>Unser Kindergarten besteht aus f&uuml;nf Gruppen, welche mit maximal 23 Kindern besetzt werden. Jede Gruppe wird von einer p&auml;dagogischen Fachkraft geleitet,
-        die wiederum von einer Hilfskraft unterst&uuml;zt wird. Anmeldungen k&ouml;nnen &uuml;ber die Kindergartenleiterin Doris Wimmer get&auml;tigt werden. Anfragen telefonisch &uuml;ber 
-        +43 7724 2212 16 oder per Mail &uuml;ber kindergarten@burgkirchen.ooe.gv.at. F&uuml;r weitere Informationen siehe Men&uuml;punkt "Informationen".
-      </p>
-    </section>
+
+      </header>
+        <br><br><br>
+        <section class="cards-wrapper">
+        <div class="card-grid-space">
+        <div class="card">
+          <div class="card-side front" style="background-image: url('images/fish.webp')">
+            <div>Fischgruppe</div>
+          </div>
+          <div class="card-side back">
+            <div>Anja <br> Petra</div>
+          </div>
+        </div>
+      </div>
+
+      <div class="card-grid-space">
+        <div class="card">
+          <div class="card-side front" style="background-image: url('images/hedgehog.webp')">
+            <div>Igelgruppe</div>
+          </div>
+          <div class="card-side back">
+            <div>Sandra <br> Sophia</div>
+          </div>
+        </div>
+      </div>
+
+      <div class="card-grid-space">
+        <div class="card">
+          <div class="card-side front" style="background-image: url('images/cat.webp')">
+            <div>Katzengruppe</div>
+          </div>
+          <div class="card-side back">
+            <div>Doris <br> Hildegard</div>
+          </div>
+        </div>
+      </div>
+
+      <div class="card-grid-space">
+        <div class="card">
+          <div class="card-side front" style="background-image: url('images/toddler.webp')">
+            <div>Krabbelgruppe</div>
+          </div>
+          <div class="card-side back">
+            <div>Manuela <br> Michaela <br> Nina <br> Regina</div>
+          </div>
+        </div>
+      </div>
+
+      <div class="card-grid-space">
+        <div class="card">
+          <div class="card-side front" style="background-image: url('images/butterfly.webp')">
+            <div>Schmetterlingsgruppe</div>
+          </div>
+          <div class="card-side back">
+            <div>Julia <br> Sandra</div>
+          </div>
+        </div>
+      </div>
+
+      <div class="card-grid-space">
+        <div class="card">
+          <div class="card-side front" style="background-image: url('images/administration.webp')">
+            <div>Administration</div>
+          </div>
+          <div class="card-side back">
+            <div>
+              Christa (Busbegleitung) <br>
+              Sandra (Busbegleitung) <br>
+              Maria (Reinigung) <br>
+              Doris (Leitung) <br>
+            </div>
+          </div>
+        </div>
+      </div>
+      </section>
+
+      <section class="flexible">
+        <p>Unser Kindergarten besteht aus f&uuml;nf Gruppen, welche mit maximal 23 Kindern besetzt werden. Jede Gruppe wird von einer p&auml;dagogischen Fachkraft geleitet,
+          die wiederum von einer Hilfskraft unterst&uuml;zt wird. Anmeldungen k&ouml;nnen &uuml;ber die Kindergartenleiterin Doris Wimmer get&auml;tigt werden. Anfragen telefonisch &uuml;ber 
+          +43 7724 2212 16 oder per Mail &uuml;ber kindergarten@burgkirchen.ooe.gv.at. F&uuml;r weitere Informationen siehe Men&uuml;punkt "Informationen".
+        </p>
+      </section>
       
       <script src="js/jquery-3.3.1.min.js"></script>
       <script src="js/popper.min.js"></script>
