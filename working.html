@@ -28,6 +28,37 @@
     
         <!-- Style -->
         <link rel="stylesheet" href="css/style.css">
+
+        <style>
+          body, html {
+    height: 100%;
+}
+
+/* The hero image */
+.hero-image {
+  /* Use "linear-gradient" to add a darken background effect to the image (photographer.jpg). This will make the text easier to read */
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("images/hero_image.jpeg");
+
+  /* Set a specific height */
+  height: 50%;
+
+  /* Position and center the image to scale nicely on all screens */
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+}
+
+/* Place text in the middle of the image */
+.hero-text {
+  text-align: center;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: white;
+}
+        </style>
     </head>
 
     <body>
@@ -59,14 +90,14 @@
                         <a class="nav-link">&Uuml;ber uns</a>
                         <ul class="dropdown">
                           <li><a href="team.html" class="nav-link">Team</a></li>
-                          <li><a href="#pricing-section" class="nav-link">Mit uns arbeiten</a></li>
-                          
+                          <li><a href="working.html" class="nav-link">Mit uns arbeiten</a></li>
+                          <li><a href="kindergartenordnung.html" class="nav-link">Kindergartenordnung</a></li>
                         </ul>
                       </li>
                       
                       <li><a href="raeumlichkeiten.html" class="nav-link">R&auml;umlichkeiten</a></li>
                       <li><a href="oeffnungszeiten.html" class="nav-link">&Ouml;ffnunszeiten</a></li>
-                      <li><a href="informationen.html" class="nav-link">Informationen</a></li>
+                      <li><a href="downloads.html" class="nav-link">Downloads</a></li>
                     </ul>
                   </nav>
                 </div>
@@ -78,21 +109,17 @@
             </div>
             
           </header>
-        
-      
-        
-          
-          
-      
-          <script src="js/jquery-3.3.1.min.js"></script>
-          <script src="js/popper.min.js"></script>
-          <script src="js/bootstrap.min.js"></script>
-          <script src="js/jquery.sticky.js"></script>
-          <script src="js/main.js"></script>
+
+        <div class="hero-image">
+          <div class="hero-text">
+            <h1>Mit uns arbeiten</h1>
+            <p style="color: white;">Kindergarten Burgkirchen</p>
+            </div>
+        </div>
 
         <section class="flexible">
-          <p>
-            <br><br><br><br><br><br>
+          <p style="font-size: 19px; margin-left: auto; margin-right: auto;">
+            <br><br>
             Der Beruf Kindergartenpädagogik: Spaßig, krisensicher und enorm wichtig. Als pädagogische Fachkraft nimmt man einen wesentlichen Einfluss auf die Entwicklung und das Verhalten 
             Heranwachsender. Die Devise lautet: Großes leisten, für eine bessere Gesellschaft morgen.
             <br><br>
@@ -100,12 +127,36 @@
             diesem Bereich anstreben möchten als auch für Erwachsene, die sich mittels erweiterten 
             Bildungswegs zur Hilfskraft oder Fachkraft umbilden wollen.
             <br><br>
-            Anzeigen für Festanstellungen werden über das Landesportal bekanntgegeben.Bei Interesse oder Fragestellungen wenden Sie sich bitte an die Kindergartenleiterin Doris Wimmer.
+            Anzeigen für Festanstellungen werden über das Landesportal bekanntgegeben. Bei Interesse oder Fragestellungen wenden Sie sich bitte an die Kindergartenleiterin Doris Wimmer.
             <br><br>
-            Telefonnummer: +43 7724 2212 16
+            &phone; <a href="tel:+43-7724-2212-16">+43 7724 2212 16</a>
             <br>
-            E-Mail: kindergarten@burgkirchen.ooe.gv.at
+            &#9993; <a href="mailto:kindergarten@burgkirchen.ooe.gv.at">kindergarten@burgkirchen.ooe.gv.at</a>
           </p>
         </section>
+
+        <br><br><br><br><br><br><br><br><br>
+      <footer style="background-color: rgb(234, 234, 234);">
+        <br>
+          <p class="header_kbg" style="margin-left: 5%; font-size:20px">Kontakt:</p>
+          <div style="display: flex; width: 70%; margin-left: 5%;">
+            <p class="header_kbg">
+              Doris Wimmer
+              <br>
+              &phone; <a href="tel:+43-7724-2212-16">+43 7724 2212 16</a>
+              <br>
+              &#9993; <a href="mailto:kindergarten@burgkirchen.ooe.gv.at">kindergarten@burgkirchen.ooe.gv.at</a>
+              <br>
+              &#128205; <a href="https://www.google.at/maps/place/Kindergarten+I+u+II/@48.202984,13.0985105,19.71z/data=!4m5!3m4!1s0x47743148f7b18273:0xa50e68c56639990d!8m2!3d48.2029773!4d13.0987447" target="_blank">Pfarrhofstraße 3, 5274 Burgkirchen, Österreich</a>
+            </p>
+            <br>
+          </div>
+      </footer>
+      
+        <script src="js/jquery-3.3.1.min.js"></script>
+        <script src="js/popper.min.js"></script>
+        <script src="js/bootstrap.min.js"></script>
+        <script src="js/jquery.sticky.js"></script>
+        <script src="js/main.js"></script>
     </body>
 </html>
