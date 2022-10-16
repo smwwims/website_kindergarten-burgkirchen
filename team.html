@@ -6,101 +6,103 @@
     <meta name="keywords" content="Kindergarten, Burgkirchen, Kindertagesst&auml;tte, Braunau, P&auml;dagogik" />
     <meta name="description" content="Unser Team vom Kindergarten Burgkirchen." />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <meta name="date" content="XXXXXXX" />
     <meta charset="UTF-8" />
+    <link rel="icon" type="image/x-icon" href="favicon.ico" />
 
+    <!-- Open Graph Meta Tags -->
     <meta property="og:title" content="Kindergarten Burgkirchen"/>
     <meta property="og:description" content="Unser Team vom Kindergarten Burgkirchen.">
     <meta property="og:image" content="images/kindergarten_schriftzug-quer.webp"/>
-    <meta property="og:url" content="XXXXXXX"/>
+    <meta property="og:url" content="https://www.kindergarten-burgkirchen.rf.gd/team.html"/>
     <meta property="og:type" content="website"/>
 
+    <!-- No chaching -->
+    <meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate" />
+    <meta http-equiv="Pragma" content="no-cache" />
+    <meta http-equiv="Expires" content="0" />
+
+    <!-- CSS -->
     <link rel="stylesheet" href="css/kindergarten_burgkirchen-stylesheet.css" />
-    <script language="javascript" type="text/javascript" src="XXXXXXX"></script>
-    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,700" rel="stylesheet">
-
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,700">
     <link rel="stylesheet" href="fonts/icomoon/style.css">
-
     <link rel="stylesheet" href="css/owl.carousel.min.css">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/style.css">
 
+    <!-- Javascript -->
     <script src="js/jquery-3.3.1.min.js"></script>
     <script src="js/popper.min.js"></script>
     <script src="js/bootstrap.min.js"></script>
     <script src="js/jquery.sticky.js"></script>
     <script src="js/main.js"></script>
+    <script src="js/owl.carousel.min.js"></script>
 
-    
-    <!-- Bootstrap CSS -->
-    <link rel="stylesheet" href="css/bootstrap.min.css">
-    
-    <!-- Style -->
-    <link rel="stylesheet" href="css/style.css">
     <style>
-    body {
-    height: 100%;
-    overflow: auto;
-}
+      body {
+        height: 100%;
+        overflow: auto;
+      }
 
-    .card {
-  height: 14em;
-  width: 14em;
-  font-size: 1.5em;
-  border-radius: 1em;
-  padding: 1em;
-  display: flex;
-  align-items: flex-end;
-  background-size: cover;
-  background-position: center;
-  transition: all, var(--transition-time);
-  position: relative;
-  overflow: hidden;
-  text-decoration: none;
-}
+      .card {
+        height: 14em;
+        width: 14em;
+        font-size: 1.5em;
+        border-radius: 1em;
+        padding: 1em;
+        display: flex;
+        align-items: flex-end;
+        background-size: cover;
+        background-position: center;
+        transition: all, var(--transition-time);
+        position: relative;
+        overflow: hidden;
+        text-decoration: none;
+      }
 
-.card-side {
-  height: 20em;
-  width: 15em;
-  border-radius: 15px;
-  transition: all 0.8s ease;
-  backface-visibility: hidden;
-  position: absolute;
-  top: 0;
-  left: 0;
-  padding: 2rem;
-  color: white
-}
+      .card-side {
+        height: 20em;
+        width: 15em;
+        border-radius: 15px;
+        transition: all 0.8s ease;
+        backface-visibility: hidden;
+        position: absolute;
+        top: 0;
+        left: 0;
+        padding: 2rem;
+        color: white
+      }
 
-.card-side.back {
-  transform: rotateY(-180deg);
-  background-color: #0093E9;
-  background-image: linear-gradient(160deg, #0093E9 0%, #80D0C7 100%);
-}
+      .card-side.back {
+        transform: rotateY(-180deg);
+        background-color: #0093E9;
+        background-image: linear-gradient(160deg, #0093E9 0%, #80D0C7 100%);
+      }
 
-.card:hover .card-side.front {
-  transform: rotateY(180deg);
-}
+      .card:hover .card-side.front {
+        transform: rotateY(180deg);
+      }
 
-.card:hover .card-side.back {
-  transform: rotateY(0deg);
-}
+      .card:hover .card-side.back {
+        transform: rotateY(0deg);
+      }
 
-.cards-wrapper {
-  display: grid;
-  justify-content: center;
-  align-items: center;
-  grid-template-columns: 1fr 1fr 1fr;
-  grid-gap: 4rem;
-  padding: 4rem;
-  margin: 0 auto;
-  width: max-content;
-}
+      .cards-wrapper {
+        display: grid;
+        justify-content: center;
+        align-items: center;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-gap: 4rem;
+        padding: 4rem;
+        margin: 0 auto;
+        width: max-content;
+      }
 
-@media screen and (max-width: 1285px) {
+      @media screen and (max-width: 1285px) {
         .cards-wrapper {
           grid-template-columns: 1fr 1fr;
+          }
         }
-      }
-      
+            
       @media screen and (max-width: 900px) {
         .cards-wrapper {
           grid-template-columns: 1fr;
@@ -110,7 +112,7 @@
           text-align: center;
         }
       }
-      
+        
       @media screen and (max-width: 500px) {
         .cards-wrapper {
           padding: 4rem 2rem;
@@ -119,9 +121,9 @@
           max-width: calc(100vw - 4rem);
         }
         .flexible{
-        margin-left: 30px;
+          margin-left: 30px;
+        }
       }
-    }
     </style>
   </head>
 

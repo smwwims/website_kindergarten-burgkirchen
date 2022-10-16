@@ -2,6 +2,15 @@
   --main_color: rgb(44, 130, 243);
 }
 
+@media screen and ( max-width: 500px ){
+  .flexible{
+      margin-left: 55px;
+  }
+  th, td {
+    font-size: 12px;
+  }
+}
+
 video {
   object-fit: cover;
   width: 100vw;
@@ -33,6 +42,13 @@ video {
   border-color: var(--main_color);
 
   filter: drop-shadow(10px 10px 15px var(--main_color))
+}
+
+.flexible_header {
+  display: flex;
+  width: 60%;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .header_kbg {
@@ -118,10 +134,4 @@ th, td {
 body {
   height: 100%;
   overflow: auto;
-}
-
-@media screen and ( max-width: 500px ){
-  .flexible{
-      margin-left: 55px;
-  }
 }
